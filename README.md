@@ -16,6 +16,18 @@ npm run build
 npm start
 ```
 
+## Deploy to Vercel
+
+The repository includes `vercel.json`, which explicitly selects the Next.js
+framework and its `.next` build output. Import the repository into Vercel and
+deploy with the checked-in defaults.
+
+If the Vercel project was previously configured with `public` as its Output
+Directory, either clear that override in **Project Settings → Build and
+Deployment** or redeploy after pulling the repository configuration. `public`
+is only the static-asset directory in a Next.js project; it is not the compiled
+application output.
+
 ## Product architecture
 
 - `app/page.tsx` controls the transition between the public site and sample workspace.
